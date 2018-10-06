@@ -1,0 +1,50 @@
+
+<?init class="org.zkoss.zkplus.databind.AnnotateDataBinderInit" root="./wdwLogin"?>
+
+<?link rel="shortcut icon" type="image/x-icon" href="img/logo.ico"?>
+<?meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" ?>
+<?link rel="stylesheet" type="text/css" href="/bootstrap/v3/bootstrap/css/bootstrap.min.css" ?>
+<?link rel="stylesheet" type="text/css" href="/css/style.css" ?>
+<?link rel="stylesheet" type="text/css" href="/css/menu.css" ?>
+<?link rel="stylesheet" type="text/css" href="/css/windows.css" ?>
+
+<zk xmlns:n="native">
+	<window apply="com.umg.login.loginController" id="wdwLogin" class="panel panel-login">
+		<div class="panel-heading">
+			<n:h4>Inicio de sesión</n:h4>
+		</div>
+		<div class="panel-body"> 
+			<div class="row">
+		    			<div class="col-xs-12">
+		    				<div class="row">
+		    					<div class="col-xs-12">
+		    						<n:h5>Usuario:</n:h5>
+		    						<textbox id="txtUser" class="btn-details" constraint="no empty: Ingrese usuario"/>
+			    				</div>
+			    				<div class="clearfix"/>	
+			    				<div class="col-xs-12">
+		    						<n:h5>Contraseña:</n:h5>
+		    						<textbox id="txtKey" type="password" class="btn-details" constraint="no empty: Ingrese contraseña"/>
+			    				</div>	
+			    				<div class="clearfix"/>	
+			    				<div class="col-xs-12">
+			    					<a href="?action=forgotPassword" label="Olvidé mi contraseña"/>
+			    				</div>
+		    				</div>			    				
+		    			</div>		
+			</div>	
+			<div height="25px" class="row"></div>
+			<div class="row">
+		    			<div class="col-xs-12">
+		    				<div class="row">
+			    				<div class="col-xs-6"></div>
+								<div class="col-xs-6">
+									<button id="btnLogin" class="btn btn-validate btn-action" onClick=''>Entrar</button>
+								</div>
+								<div class="clearfix"/>		
+		    				</div>			    				
+		    			</div>		
+			</div>				
+		</div>	
+	</window>
+</zk>

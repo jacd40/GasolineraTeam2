@@ -1,0 +1,20 @@
+<?init class="org.zkoss.zkplus.databind.AnnotateDataBinderInit" root="./wdwDashboard"?>
+
+<?link rel="shortcut icon" type="image/x-icon" href="img/logo.ico"?>
+<?meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" ?>
+<?link rel="stylesheet" type="text/css" href="/bootstrap/v3/bootstrap/css/bootstrap.min.css" ?>
+<?link rel="stylesheet" type="text/css" href="/css/style.css" ?>
+<?link rel="stylesheet" type="text/css" href="/css/menu.css" ?>
+<?link rel="stylesheet" type="text/css" href="/css/windows.css" ?>
+<zk xmlns:n="native" xmlns:x="xhtml" xmlns:h="http://www.w3.org/1999/xhtml">
+<style src="/css/cmn-toggle.css"/>
+	<window apply="com.umg.dashboard.dashboardController"   id="wdwDashboard" class="panel panel-default panel-data">
+		<div class="panel-heading">
+			<n:h4>Dashboard</n:h4>
+		</div>.
+		<div class="panel-body">
+			
+			<n:h2>Bienvenido </n:h2>	
+		</div>	
+	</window>
+</zk>
